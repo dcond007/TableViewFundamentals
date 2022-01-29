@@ -16,19 +16,19 @@ Learn how to create a table view, and populate it with an array of data.
   * Place the label inside the cell
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/addObjects.gif">
 
-### Create a new Cell file (Cell Class)
+### Create a new file (Cell Class)
 * Right click on project folder
-* create iOS Cocoa Touch Class
+* create a new iOS Cocoa Touch Class
 * Lets name it, TableViewCell
-*   The class type is UITableViewCell
+  * The class type is UITableViewCell
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createCellClass.gif">
 
 ### Configure a Cell and Cell Class
 * Go to the Main.storyboard
 * Click and highlight the table view cell
 * Show the inspectors on the upper right corner
-*   Identity Inspector: (license looking icon) fill in the class name, TableViewCell
-*     tap enter when done
+ * Identity Inspector: (license looking icon) fill in the class name, TableViewCell
+   * tap enter when done
 *   Attributes Inspector: (3 sliders icon) fill in the Reuse Identifier, TableViewCell
 *     tap enter when done
 * Add an IBOutlet to the TableViewCell class
