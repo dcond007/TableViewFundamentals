@@ -5,7 +5,7 @@ Learn how to create a table view, and populate it with an array of data.
 * Set Interface to Storyboard
 * Set Language to Swift
 * Save project to your location of choice
-* <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createAProject.gif" width="600">
+* <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createAProject.gif" width="">
 
 
 ### Add Objects to Main Storyboard
