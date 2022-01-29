@@ -8,6 +8,7 @@ Learn how to create a table view, and populate it with an array of data.
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createAProject.gif">
 
 
+
 ### Add Objects to Main Storyboard
 * Add a TableView
 * Add a Cell
@@ -16,6 +17,8 @@ Learn how to create a table view, and populate it with an array of data.
   * Place the label inside the cell
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/addObjects.gif">
 
+
+
 ### Create a new Cell Class
 * Right click on the project folder
 * Create a new iOS Cocoa Touch Class
@@ -23,8 +26,10 @@ Learn how to create a table view, and populate it with an array of data.
   * The class type is UITableViewCell
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createCellClass.gif">
 
+
+
 ### Configure the Cell and Cell Class
-* Go to the Main.storyboard
+* Go to the Main Storyboard
 * Click and highlight the table view cell
 * Show the inspectors on the upper right corner
   * Identity Inspector: (license looking icon) fill in the class name, TableViewCell
@@ -40,7 +45,7 @@ Learn how to create a table view, and populate it with an array of data.
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/configureCellClass.gif">
 
 ### Implement TableView Features to our View Controller
-* Go to the ViewController swift file
+* Go to the ViewController file
 * Implement the following classes:
   * UITableViewDelegate
   * UITableViewDataSource
@@ -49,6 +54,8 @@ Learn how to create a table view, and populate it with an array of data.
     * numberOfRowsInSection
     * cellForRowAt
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/implementClasses.gif">
+
+
 
 ### Table View Outlet and more
 * We can use a handy feature called assistant editor
@@ -62,6 +69,8 @@ Learn how to create a table view, and populate it with an array of data.
   * myTableView.delegate = self
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/tableViewAndMore.gif">
 
+
+
 ### Populate the Tableview with data
 * Create an array, and give it some values (example: myArray)
 * update the numberOfRowsInSection() method
@@ -73,10 +82,14 @@ Learn how to create a table view, and populate it with an array of data.
   * ``` ```
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/giveTableViewData.gif">
 
+
+
 ### I ran the code, but my layout is smooshed.
 * Without adding contraints or enabling auto layout, the cells may not render properly
 * Add constraints to the Label
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/doesItRun.gif">
+
+
 
 ### Bonus Feature
 * Create a text edit field and a button to add more to the list
