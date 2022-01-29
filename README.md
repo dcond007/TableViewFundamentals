@@ -1,10 +1,12 @@
-# TableViewFundamentals
-Learn how to create a table view, and populate a cell(s) dynamically with an array of data.
+# Create A TableView
+Learn how to create a table view, and populate it with an array of data.
 
 ### Create a new Xcode project
 * Set Interface to Storyboard
 * Set Language to Swift
 * Save project to your location of choice
+* <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createAProject.gif" width="600">
+
 
 ### Add Objects to Main Storyboard
 * Add a TableView Object
@@ -12,12 +14,14 @@ Learn how to create a table view, and populate a cell(s) dynamically with an arr
 *   Place the cell object inside the tableview
 * Add a Label object
 *   Place the label inside the cell
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/addObjects.gif" width="600">
 
 ### Create a new Cell file (Cell Class)
 * Right click on project folder
 * create iOS Cocoa Touch Class
 * Lets name it, TableViewCell
 *   The class type is UITableViewCell
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/createCellClass.gif" width="600">
 
 ### Configure a Cell and Cell Class
 * Go to the Main.storyboard
@@ -33,6 +37,7 @@ Learn how to create a table view, and populate a cell(s) dynamically with an arr
 * Click and highlight the Label
 *   While holding the CONTROL key, click and drag from the Label to the TableViewCell class
 *   On the click release, set the connection to an Outlet, and name the new outlet. 
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/configureCellClass.gif" width="600">
 
 ### Implement TableView Features to our View Controller
 * Go to the ViewController swift file
@@ -43,6 +48,7 @@ Learn how to create a table view, and populate a cell(s) dynamically with an arr
 *   Click the red icon, and fix the error, two methods are now generated:
 *     numberOfRowsInSection
 *     cellForRowAt
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/implementClasses.gif" width="600">
 
 ### Table View Outlet and more
 * We can use a handy feature called assistant editor
@@ -54,6 +60,7 @@ Learn how to create a table view, and populate a cell(s) dynamically with an arr
 * Go to the viewDidLoad() method and add the following lines of code:
 *   myTableView.dataSource = self
 *   myTableView.delegate = self
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/tableViewAndMore.gif" width="600">
 
 ### Populate the Tableview with data
 * Create an array, and give it some values (example: myArray)
@@ -64,12 +71,16 @@ Learn how to create a table view, and populate a cell(s) dynamically with an arr
 *   update the cells label attribute to myArray[indexPath.row]
 *   return the cell
 *   ``` ```
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/giveTableViewData.gif" width="600">
 
 ### I ran the code, but my layout is smooshed.
 * Without adding contraints or enabling auto layout, the cells may not render properly
 * Add constraints to the Label
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/doesItRun.gif" width="600">
 
 ### Bonus Feature
 * Create a text edit field and a button to add more to the list
 * place a check to avoid posting blank items
 * Besure to add contraints to all the objects in the View.
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/bonus.gif" width="600">
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/bonusDemo.gif" width="600">
