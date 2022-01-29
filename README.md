@@ -9,11 +9,11 @@ Learn how to create a table view, and populate it with an array of data.
 
 
 ### Add Objects to Main Storyboard
-* Add a TableView Object
-* Add a Cell Object
-*   Place the cell object inside the tableview
-* Add a Label object
-*   Place the label inside the cell
+* Add a TableView
+* Add a Cell
+  * Place the cell inside the tableview
+* Add a Label
+  * Place the label inside the cell
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/addObjects.gif">
 
 ### Create a new Cell file (Cell Class)
