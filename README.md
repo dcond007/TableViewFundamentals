@@ -1,5 +1,6 @@
 # Tableview Implementation
 Learn how to create a table view, and populate it with an array of data.
+
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/bonusDemo.gif">
 
 
