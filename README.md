@@ -1,5 +1,7 @@
 # Tableview Implementation
 Learn how to create a table view, and populate it with an array of data.
+<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/bonusDemo.gif">
+
 
 ### Create a new Xcode project
 * Set Interface to Storyboard
@@ -79,7 +81,14 @@ Learn how to create a table view, and populate it with an array of data.
   * create a cell variable of the TableViewCell class type
   * update the cells label attribute to myArray[indexPath.row]
   * return the cell
-  * ``` ```
+``` 
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 
+   {
+          let myCell = myTableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+          myCell.myLabel.text = myArray[indexPath.row]
+          return myCell
+    }
+```
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/giveTableViewData.gif">
 
 
@@ -95,5 +104,13 @@ Learn how to create a table view, and populate it with an array of data.
 * Create a text edit field and a button to add more to the list
 * place a check to avoid posting blank items
 * Besure to add contraints to all the objects in the View.
+``` 
+    @IBAction func onPostClick(_ sender: Any) 
+    {  
+        if (!(myTextField.text!.isEmpty)) {
+            myArray.append(myTextField.text!)
+            myTableView.reloadData()
+        }
+    }
+```
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/bonus.gif">
-<img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/bonusDemo.gif">
