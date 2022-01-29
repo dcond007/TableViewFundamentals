@@ -1,4 +1,4 @@
-# Create A TableView
+# Tableview and prototype cell implementation
 Learn how to create a table view, and populate it with an array of data.
 
 ### Create a new Xcode project
