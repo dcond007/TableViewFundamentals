@@ -46,10 +46,30 @@ Learn how to create a table view, and populate a cell(s) dynamically with an arr
 
 ### Table View Outlet and more
 * We can use a handy feature called assistant editor
-* Click and highlight the Main storyboard file
+* Click and highlight the Main storyboard
 * Click on the paragraph looking icon, and select the assistant editor
-*   the controller associated with the main storyboard is now displayed
-* While holding the CONTROL key, click and drag from the table view to the ViewController swift file
-*   Release the click, create and name the Outlet
-* Go to the viewDidLoad() method
-*   
+*   the controller associated with the main storyboard is now side by side
+* While holding the CONTROL key, click and drag from the table view object to the ViewController class
+*   Release the click, create and name the Outlet (example: myTableView)
+* Go to the viewDidLoad() method and add the following lines of code:
+*   myTableView.dataSource = self
+*   myTableView.delegate = self
+
+### Populate the Tableview with data
+* Create an array, and give it some values (example: myArray)
+* update the numberOfRowsInSection() method
+*   This will return myArray.count
+* Update the cellForRowAt() method
+*   create a cell variable of the TableViewCell class type
+*   update the cells label attribute to myArray[indexPath.row]
+*   return the cell
+*   ``` ```
+
+### I ran the code, but my layout is smooshed.
+* Without adding contraints or enabling auto layout, the cells may not render properly
+* Add constraints to the Label
+
+### Bonus Feature
+* Create a text edit field and a button to add more to the list
+* place a check to avoid posting blank items
+* Besure to add contraints to all the objects in the View.
