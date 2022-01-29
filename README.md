@@ -90,6 +90,14 @@ Learn how to create a table view, and populate it with an array of data.
           return myCell
     }
 ```
+``` 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 
+    {
+        let myCell = myTableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+        myCell.myLabel.text = myArray[indexPath.row]
+        return myCell
+    }
+```
 <img src="https://github.com/dcond007/iOS-Introduction/blob/main/TableViewGIFs/giveTableViewData.gif">
 
 
